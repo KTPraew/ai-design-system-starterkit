@@ -20,22 +20,6 @@ export default function ChartShowcase() {
           </p>
         </div>
 
-        {/* Installation */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle>Installation</CardTitle>
-            <CardDescription>Install the following dependencies to get started</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div>
-              <p className="text-sm font-medium mb-2">Install Recharts:</p>
-              <pre className="bg-muted p-4 rounded-lg text-sm">
-                <code>npm install recharts</code>
-              </pre>
-            </div>
-          </CardContent>
-        </Card>
-
         {/* Area Chart Example */}
         <Card className="mb-8">
           <CardHeader>
