@@ -73,11 +73,9 @@ export default function NavigationMenuPage() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                      Home
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
+                    Home
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Getting Started</NavigationMenuTrigger>
@@ -127,11 +125,11 @@ export default function NavigationMenuPage() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/components" legacyBehavior passHref>
+                  <NavigationMenuLink href="/components" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       Documentation
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -148,12 +146,12 @@ export default function NavigationMenuPage() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
+                  <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       <Home className="mr-2 h-4 w-4" />
                       Home
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
@@ -218,12 +216,12 @@ export default function NavigationMenuPage() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
+                  <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       <Home className="mr-2 h-4 w-4" />
                       Home
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>
@@ -283,12 +281,12 @@ export default function NavigationMenuPage() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/components" legacyBehavior passHref>
+                  <NavigationMenuLink href="/components" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       <User className="mr-2 h-4 w-4" />
                       Account
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -382,11 +380,11 @@ export default function NavigationMenuPage() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/components" legacyBehavior passHref>
+                  <NavigationMenuLink href="/components" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       More
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -403,39 +401,37 @@ export default function NavigationMenuPage() {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                      Home
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
+                    Home
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/accordion" legacyBehavior passHref>
+                  <NavigationMenuLink href="/accordion" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       About
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/button" legacyBehavior passHref>
+                  <NavigationMenuLink href="/button" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       Services
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/card" legacyBehavior passHref>
+                  <NavigationMenuLink href="/card" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       Portfolio
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/chart" legacyBehavior passHref>
+                  <NavigationMenuLink href="/chart" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       Contact
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -452,44 +448,44 @@ export default function NavigationMenuPage() {
             <NavigationMenu orientation="vertical" className="max-w-none">
               <NavigationMenuList className="flex-col items-start space-y-1">
                 <NavigationMenuItem className="w-full">
-                  <Link href="/" legacyBehavior passHref>
+                  <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "w-full justify-start")}>
                       <Home className="mr-2 h-4 w-4" />
                       Dashboard
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/accordion" legacyBehavior passHref>
+                  <NavigationMenuLink href="/accordion" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "w-full justify-start")}>
                       <Users className="mr-2 h-4 w-4" />
                       Team
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/button" legacyBehavior passHref>
+                  <NavigationMenuLink href="/button" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "w-full justify-start")}>
                       <Package className="mr-2 h-4 w-4" />
                       Projects
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/card" legacyBehavior passHref>
+                  <NavigationMenuLink href="/card" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "w-full justify-start")}>
                       <Calendar className="mr-2 h-4 w-4" />
                       Calendar
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/chart" legacyBehavior passHref>
+                  <NavigationMenuLink href="/chart" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "w-full justify-start")}>
                       <Settings className="mr-2 h-4 w-4" />
                       Settings
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -506,11 +502,9 @@ export default function NavigationMenuPage() {
             <NavigationMenu viewport={false}>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                      Home
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
+                    Home
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Features</NavigationMenuTrigger>
@@ -532,11 +526,11 @@ export default function NavigationMenuPage() {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Link href="/components" legacyBehavior passHref>
+                  <NavigationMenuLink href="/components" className={navigationMenuTriggerStyle()}>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       Pricing
                     </NavigationMenuLink>
-                  </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -572,11 +566,11 @@ export default function NavigationMenuPage() {
                   <code>{`<NavigationMenu>
   <NavigationMenuList>
     <NavigationMenuItem>
-      <Link href="/" legacyBehavior passHref>
+      <NavigationMenuLink href="/" className={navigationMenuTriggerStyle()}>
         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
           Home
         </NavigationMenuLink>
-      </Link>
+      </NavigationMenuLink>
     </NavigationMenuItem>
   </NavigationMenuList>
 </NavigationMenu>`}</code>
