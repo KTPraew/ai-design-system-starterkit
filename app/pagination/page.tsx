@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   Pagination,
   PaginationContent,
@@ -32,7 +33,7 @@ export default function PaginationPage() {
   const totalItems = 247
 
   return (
-    <div className="container mx-auto py-10">
+    <DocsLayoutWrapper><div className="container mx-auto py-10">
       <div className="mb-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Pagination</h1>
@@ -748,5 +749,6 @@ export default function PaginationPage() {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

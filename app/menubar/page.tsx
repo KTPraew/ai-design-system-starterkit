@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, FileText, Copy, Scissors, ClipboardPaste, Undo, 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   Menubar,
   MenubarContent,
@@ -32,7 +33,7 @@ export default function MenubarPage() {
   const [layout, setLayout] = useState("grid")
 
   return (
-    <div className="container mx-auto py-10">
+    <DocsLayoutWrapper><div className="container mx-auto py-10">
       <div className="mb-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Menubar</h1>
@@ -999,5 +1000,6 @@ export default function MenubarPage() {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

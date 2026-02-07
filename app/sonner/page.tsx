@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import Link from "next/link"
 import { toast } from "sonner"
 import {
@@ -29,7 +30,7 @@ import {
 
 export default function SonnerPage() {
   return (
-    <div className="container mx-auto space-y-8 p-8">
+    <DocsLayoutWrapper><div className="container mx-auto space-y-8 p-8">
       {/* Header */}
       <div className="space-y-2">
         <div className="flex items-center gap-2">
@@ -1139,5 +1140,6 @@ export default function RootLayout({ children }) {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

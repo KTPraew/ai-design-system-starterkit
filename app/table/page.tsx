@@ -26,6 +26,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import Link from "next/link"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   MoreHorizontalIcon,
   ArrowUpDownIcon,
@@ -85,7 +86,7 @@ export default function TablePage() {
   const totalPages = Math.ceil(invoices.length / itemsPerPage)
 
   return (
-    <div className="container mx-auto space-y-8 p-8">
+    <DocsLayoutWrapper><div className="container mx-auto space-y-8 p-8">
       {/* Header */}
       <div className="space-y-2">
         <div className="flex items-center gap-2">
@@ -859,5 +860,6 @@ const [sortOrder, setSortOrder] = useState("asc")
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

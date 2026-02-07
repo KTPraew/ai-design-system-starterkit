@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Label } from '@/components/ui/label'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   InputOTP,
   InputOTPGroup,
@@ -18,8 +19,8 @@ export default function InputOTPShowcase() {
   const [value8, setValue8] = useState('')
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <DocsLayoutWrapper>
+      <div className="space-y-8">
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-2">
@@ -487,6 +488,6 @@ const [value, setValue] = useState('')
           </Button>
         </div>
       </div>
-    </div>
+    </DocsLayoutWrapper>
   )
 }

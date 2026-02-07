@@ -7,6 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Progress } from '@/components/ui/progress'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   Settings,
   MoreVertical,
@@ -35,7 +36,7 @@ import {
 
 export default function CardShowcase() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -705,5 +706,6 @@ export default function CardShowcase() {
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

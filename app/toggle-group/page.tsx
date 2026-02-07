@@ -4,6 +4,7 @@ import { useState } from "react"
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 import { Bold, Italic, Underline, AlignLeft, AlignCenter, AlignRight, AlignJustify, List, ListOrdered, Code, Quote, Strikethrough, Subscript, Superscript, MoreHorizontal, Palette, Type, Image, Link2, Calendar, Clock, MapPin, Phone, Mail, Globe, ChevronLeft, ChevronRight, Play, Pause, SkipBack, SkipForward, Volume2, Shuffle, Repeat, Grid, LayoutList, LayoutGrid, SlidersHorizontal, FileText, Video, Music, Download } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function ToggleGroupPage() {
   const [textStyle, setTextStyle] = useState<string[]>(["bold"])
@@ -14,7 +15,7 @@ export default function ToggleGroupPage() {
   const [mediaType, setMediaType] = useState<string>("all")
 
   return (
-    <div className="container mx-auto py-10 max-w-4xl">
+    <DocsLayoutWrapper><div className="container mx-auto py-10 max-w-4xl">
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-3">
@@ -717,5 +718,6 @@ export default function ToggleGroupPage() {
         </a>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

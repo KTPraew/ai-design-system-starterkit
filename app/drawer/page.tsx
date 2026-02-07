@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { Checkbox } from '@/components/ui/checkbox'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   Drawer,
   DrawerClose,
@@ -45,7 +46,7 @@ export default function DrawerShowcase() {
   const [goal, setGoal] = useState(350)
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -664,5 +665,6 @@ import { Button } from '@/components/ui/button'
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

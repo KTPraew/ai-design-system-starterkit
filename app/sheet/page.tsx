@@ -22,6 +22,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Switch } from "@/components/ui/switch"
 import { Checkbox } from "@/components/ui/checkbox"
 import Link from "next/link"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   MenuIcon,
   ShoppingCartIcon,
@@ -61,7 +62,7 @@ export default function SheetPage() {
   ])
 
   return (
-    <div className="container mx-auto space-y-8 p-8">
+    <DocsLayoutWrapper><div className="container mx-auto space-y-8 p-8">
       {/* Header */}
       <div className="space-y-2">
         <div className="flex items-center gap-2">
@@ -1197,5 +1198,6 @@ export default function SheetPage() {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

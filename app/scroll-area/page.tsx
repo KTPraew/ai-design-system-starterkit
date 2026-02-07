@@ -93,7 +93,7 @@ const messages = [
 
 export default function ScrollAreaPage() {
   return (
-    <div className="container mx-auto py-10">
+    <DocsLayoutWrapper><div className="container mx-auto py-10">
       <div className="mb-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Scroll Area</h1>
@@ -526,6 +526,7 @@ const handleSubmit = async (event) => {
                 <h3 className="font-semibold mb-2">Import</h3>
                 <pre className="bg-secondary p-4 rounded-lg overflow-x-auto">
                   <code>{`import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"`}</code>
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
                 </pre>
               </div>
 
@@ -622,5 +623,6 @@ const handleSubmit = async (event) => {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

@@ -18,7 +18,7 @@ export default function RadioGroupPage() {
   const [theme, setTheme] = useState("system")
 
   return (
-    <div className="container mx-auto py-10">
+    <DocsLayoutWrapper><div className="container mx-auto py-10">
       <div className="mb-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Radio Group</h1>
@@ -652,6 +652,7 @@ export default function RadioGroupPage() {
                 <pre className="bg-secondary p-4 rounded-lg overflow-x-auto">
                   <code>{`import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"`}</code>
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
                 </pre>
               </div>
 
@@ -770,5 +771,6 @@ import { Label } from "@/components/ui/label"`}</code>
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

@@ -4,10 +4,11 @@ import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/comp
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Info, HelpCircle, Settings, User, Bell, Search, Heart, Star, Share2, Download, Copy, Trash2, Edit, MoreHorizontal, Plus, Check, X, AlertCircle, CheckCircle2, XCircle } from "lucide-react"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function TooltipPage() {
   return (
-    <div className="container mx-auto py-10 max-w-4xl">
+    <DocsLayoutWrapper><div className="container mx-auto py-10 max-w-4xl">
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-3">
@@ -779,5 +780,6 @@ export default function TooltipPage() {
         </a>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

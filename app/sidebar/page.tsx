@@ -20,6 +20,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Input } from "@/components/ui/input"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   HomeIcon,
   FolderIcon,
@@ -60,7 +61,7 @@ function SidebarDemo({ variant }: { variant: string }) {
   const [activePage, setActivePage] = useState("dashboard")
 
   return (
-    <div className="flex h-[600px] overflow-hidden rounded-lg border">
+    <DocsLayoutWrapper><div className="flex h-[600px] overflow-hidden rounded-lg border">
       <Sidebar>
         <SidebarHeader>
           <div className="flex items-center gap-2">
@@ -155,6 +156,7 @@ function SidebarDemo({ variant }: { variant: string }) {
         </div>
       </main>
     </div>
+    </DocsLayoutWrapper>
   )
 }
 

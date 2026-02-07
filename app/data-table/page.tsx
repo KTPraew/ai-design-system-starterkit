@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Checkbox } from '@/components/ui/checkbox'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -271,8 +272,9 @@ export default function DataTableShowcase() {
   })
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <DocsLayoutWrapper>
+      <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-2">
@@ -640,6 +642,7 @@ const table = useReactTable({
           </Button>
         </div>
       </div>
-    </div>
+      </div>
+    </DocsLayoutWrapper>
   )
 }

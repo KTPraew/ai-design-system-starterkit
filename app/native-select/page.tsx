@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { NativeSelect } from "@/components/ui/native-select"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function NativeSelectPage() {
   const [country, setCountry] = useState("")
@@ -17,8 +18,8 @@ export default function NativeSelectPage() {
   const [timeZone, setTimeZone] = useState("")
 
   return (
-    <div className="container mx-auto py-10">
-      <div className="mb-8">
+    <DocsLayoutWrapper>
+      <div className="space-y-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Native Select</h1>
           <Badge>Forms</Badge>
@@ -760,6 +761,6 @@ export default function NativeSelectPage() {
           </Button>
         </Link>
       </div>
-    </div>
+    </DocsLayoutWrapper>
   )
 }

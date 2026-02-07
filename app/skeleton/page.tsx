@@ -9,12 +9,13 @@ import { Separator } from "@/components/ui/separator"
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
 import Link from "next/link"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function SkeletonPage() {
   const [showSkeleton, setShowSkeleton] = useState(true)
 
   return (
-    <div className="container mx-auto space-y-8 p-8">
+    <DocsLayoutWrapper><div className="container mx-auto space-y-8 p-8">
       {/* Header */}
       <div className="space-y-2">
         <div className="flex items-center gap-2">
@@ -798,5 +799,6 @@ export default function SkeletonPage() {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

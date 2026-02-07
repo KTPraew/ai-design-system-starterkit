@@ -1,5 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import Link from 'next/link'
+import { BookOpen, ArrowRight } from 'lucide-react'
 
 const components = [
   { name: 'Button', description: 'Interactive button component' },
@@ -127,12 +129,21 @@ export default function Home() {
 
         {/* CTA */}
         <div className="text-center space-y-4">
-          <p className="text-muted-foreground">Ready to build something amazing?</p>
-          <Button size="lg" asChild>
-            <a href="https://ui.shadcn.com" target="_blank" rel="noopener noreferrer">
-              View Components Documentation
-            </a>
-          </Button>
+          <p className="text-muted-foreground">Ready to explore the components?</p>
+          <div className="flex gap-4 justify-center">
+            <Button size="lg" asChild>
+              <Link href="/docs">
+                <BookOpen className="mr-2 h-5 w-5" />
+                Browse Documentation
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="/docs/components/accordion">
+                View Components
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </div>

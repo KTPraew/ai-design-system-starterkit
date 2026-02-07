@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   HomeIcon,
   UserIcon,
@@ -24,7 +25,7 @@ import {
 
 export default function SeparatorPage() {
   return (
-    <div className="container mx-auto space-y-8 p-8">
+    <DocsLayoutWrapper><div className="container mx-auto space-y-8 p-8">
       {/* Header */}
       <div className="space-y-2">
         <div className="flex items-center gap-2">
@@ -805,5 +806,6 @@ export default function SeparatorPage() {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

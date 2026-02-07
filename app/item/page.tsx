@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Checkbox } from '@/components/ui/checkbox'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -33,7 +34,7 @@ import {
 
 export default function ItemShowcase() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -573,5 +574,6 @@ export default function ItemShowcase() {
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

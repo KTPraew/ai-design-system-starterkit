@@ -10,10 +10,11 @@ import {
 } from '@/components/ui/accordion'
 import { Badge } from '@/components/ui/badge'
 import { CreditCard, HelpCircle, Settings, User, Shield, Bell, Palette } from 'lucide-react'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function AccordionPage() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -304,5 +305,6 @@ export default function AccordionPage() {
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

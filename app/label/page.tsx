@@ -13,6 +13,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Switch } from "@/components/ui/switch"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function LabelPage() {
   const [formData, setFormData] = useState({
@@ -26,8 +27,8 @@ export default function LabelPage() {
   })
 
   return (
-    <div className="container mx-auto py-10">
-      <div className="mb-8">
+    <DocsLayoutWrapper>
+      <div className="space-y-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Label</h1>
           <Badge>Forms</Badge>
@@ -761,6 +762,6 @@ export default function LabelPage() {
           </Button>
         </Link>
       </div>
-    </div>
+    </DocsLayoutWrapper>
   )
 }

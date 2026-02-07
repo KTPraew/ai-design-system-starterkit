@@ -4,10 +4,11 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { TrendingUp } from 'lucide-react'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function ChartShowcase() {
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -406,5 +407,6 @@ export function Component() {
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Separator } from "@/components/ui/separator"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import Link from "next/link"
 import {
   BellIcon,
@@ -39,7 +40,7 @@ export default function SwitchPage() {
   const [marketing, setMarketing] = useState(false)
 
   return (
-    <div className="container mx-auto space-y-8 p-8">
+    <DocsLayoutWrapper><div className="container mx-auto space-y-8 p-8">
       {/* Header */}
       <div className="space-y-2">
         <div className="flex items-center gap-2">
@@ -726,5 +727,6 @@ const [checked, setChecked] = useState(false)
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

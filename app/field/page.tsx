@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   Select,
   SelectContent,
@@ -45,7 +46,7 @@ export default function FieldShowcase() {
   }
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -701,5 +702,6 @@ import { Textarea } from '@/components/ui/textarea'
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

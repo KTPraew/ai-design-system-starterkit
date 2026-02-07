@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   Select,
   SelectContent,
@@ -24,7 +25,7 @@ export default function SelectPage() {
   const [paymentMethod, setPaymentMethod] = useState("")
 
   return (
-    <div className="container mx-auto py-10">
+    <DocsLayoutWrapper><div className="container mx-auto py-10">
       <div className="mb-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Select</h1>
@@ -766,5 +767,6 @@ export default function SelectPage() {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

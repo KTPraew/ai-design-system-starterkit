@@ -15,6 +15,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 const components = [
   {
@@ -51,8 +52,8 @@ const components = [
 
 export default function NavigationMenuPage() {
   return (
-    <div className="container mx-auto py-10">
-      <div className="mb-8">
+    <DocsLayoutWrapper>
+      <div className="space-y-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Navigation Menu</h1>
           <Badge>Navigation</Badge>
@@ -657,7 +658,7 @@ ListItem.displayName = "ListItem"`}</code>
           </Button>
         </Link>
       </div>
-    </div>
+    </DocsLayoutWrapper>
   )
 }
 

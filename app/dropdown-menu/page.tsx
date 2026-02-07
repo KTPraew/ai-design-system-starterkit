@@ -48,6 +48,7 @@ import {
   Star,
 } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function DropdownMenuShowcase() {
   const [showStatusBar, setShowStatusBar] = useState(true)
@@ -56,7 +57,7 @@ export default function DropdownMenuShowcase() {
   const [position, setPosition] = useState('bottom')
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -631,5 +632,6 @@ const [position, setPosition] = useState('bottom')
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

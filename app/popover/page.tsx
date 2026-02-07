@@ -13,13 +13,14 @@ import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Separator } from "@/components/ui/separator"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function PopoverPage() {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(undefined)
 
   return (
-    <div className="container mx-auto py-10">
+    <DocsLayoutWrapper><div className="container mx-auto py-10">
       <div className="mb-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Popover</h1>
@@ -745,5 +746,6 @@ export default function PopoverPage() {
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

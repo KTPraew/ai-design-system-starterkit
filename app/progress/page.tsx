@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Label } from "@/components/ui/label"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function ProgressPage() {
   const [progress1, setProgress1] = useState(0)
@@ -43,8 +44,8 @@ export default function ProgressPage() {
   }
 
   return (
-    <div className="container mx-auto py-10">
-      <div className="mb-8">
+    <DocsLayoutWrapper>
+      <div className="space-y-8">
         <div className="flex items-center gap-4 mb-4">
           <h1 className="text-4xl font-bold">Progress</h1>
           <Badge>Feedback</Badge>
@@ -649,6 +650,6 @@ return <Progress value={progress} />`}</code>
           </Button>
         </Link>
       </div>
-    </div>
+    </DocsLayoutWrapper>
   )
 }

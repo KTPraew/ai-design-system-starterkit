@@ -13,6 +13,7 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel'
 import { Star, Quote } from 'lucide-react'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function CarouselShowcase() {
   const [api, setApi] = useState<CarouselApi>()
@@ -33,7 +34,7 @@ export default function CarouselShowcase() {
   })
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -519,5 +520,6 @@ const [api, setApi] = useState<CarouselApi>()
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

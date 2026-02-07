@@ -6,12 +6,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import { ChevronDown, ChevronRight, ChevronsUpDown, Star } from 'lucide-react'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function CollapsibleShowcase() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -349,5 +350,6 @@ const [isOpen, setIsOpen] = useState(false)
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

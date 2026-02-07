@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Toggle } from "@/components/ui/toggle"
 import { Bold, Italic, Underline, AlignLeft, AlignCenter, AlignRight, AlignJustify, List, ListOrdered, Code, Quote, Link2, Image, Volume2, VolumeX, Bell, BellOff, Star, Heart, Bookmark, Eye, EyeOff, Lock, Unlock, Sun, Moon, Grid, LayoutList } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function TogglePage() {
   const [isBold, setIsBold] = useState(false)
@@ -18,7 +19,7 @@ export default function TogglePage() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid")
 
   return (
-    <div className="container mx-auto py-10 max-w-4xl">
+    <DocsLayoutWrapper><div className="container mx-auto py-10 max-w-4xl">
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-3">
@@ -606,5 +607,6 @@ export default function TogglePage() {
         </a>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

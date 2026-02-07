@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Calendar } from '@/components/ui/calendar'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 import {
   Popover,
   PopoverContent,
@@ -22,7 +23,7 @@ export default function DatePickerShowcase() {
   const [multipleDates, setMultipleDates] = useState<Date[]>([])
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
+    <DocsLayoutWrapper><div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="mb-12">
@@ -528,5 +529,6 @@ const [dateRange, setDateRange] = useState<DateRange | undefined>()
         </div>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import Link from "next/link"
 import { CopyIcon, SendIcon, SaveIcon } from "lucide-react"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function TextareaPage() {
   const [charCount, setCharCount] = useState(0)
@@ -15,7 +16,7 @@ export default function TextareaPage() {
   const maxChars = 500
 
   return (
-    <div className="container mx-auto space-y-8 p-8">
+    <DocsLayoutWrapper><div className="container mx-auto space-y-8 p-8">
       {/* Header */}
       <div className="space-y-2">
         <div className="flex items-center gap-2">
@@ -640,5 +641,6 @@ console.log(greet("World"));`}
         </Link>
       </div>
     </div>
+    </DocsLayoutWrapper>
   )
 }
