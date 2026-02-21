@@ -22,6 +22,7 @@ import {
 } from '@/components/ui/accordion'
 import { Slider } from '@/components/ui/slider'
 import { Progress } from '@/components/ui/progress'
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function ComponentsPage() {
   const [checkboxValue, setCheckboxValue] = useState(false)
@@ -32,10 +33,10 @@ export default function ComponentsPage() {
   const [progress, setProgress] = useState(65)
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <DocsLayoutWrapper>
+      <div className="space-y-8">
         {/* Header */}
-        <div className="mb-12">
+        <div>
           <h1 className="text-4xl font-bold tracking-tight mb-2">Component Showcase</h1>
           <p className="text-lg text-muted-foreground">
             Interactive preview of all shadcn/ui components
@@ -43,7 +44,7 @@ export default function ComponentsPage() {
         </div>
 
         {/* Buttons */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Button</CardTitle>
             <CardDescription>Various button styles and sizes</CardDescription>
@@ -63,7 +64,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Input & Textarea */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Input & Textarea</CardTitle>
             <CardDescription>Text input components</CardDescription>
@@ -85,7 +86,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Checkbox, Radio, Switch */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Form Controls</CardTitle>
             <CardDescription>Checkbox, Radio Group, and Switch</CardDescription>
@@ -149,7 +150,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Select */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Select</CardTitle>
             <CardDescription>Dropdown select component</CardDescription>
@@ -173,7 +174,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Slider */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Slider</CardTitle>
             <CardDescription>Range slider control</CardDescription>
@@ -193,7 +194,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Progress */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Progress</CardTitle>
             <CardDescription>Progress bar indicators</CardDescription>
@@ -210,7 +211,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Tabs */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Tabs</CardTitle>
             <CardDescription>Tabbed content sections</CardDescription>
@@ -236,7 +237,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Accordion */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Accordion</CardTitle>
             <CardDescription>Expandable accordion sections</CardDescription>
@@ -266,7 +267,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Alert */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Alert</CardTitle>
             <CardDescription>Alert notification components</CardDescription>
@@ -294,7 +295,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Badge */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Badge</CardTitle>
             <CardDescription>Label badge components</CardDescription>
@@ -310,7 +311,7 @@ export default function ComponentsPage() {
         </Card>
 
         {/* Card */}
-        <Card className="mb-8">
+        <Card className="">
           <CardHeader>
             <CardTitle>Card</CardTitle>
             <CardDescription>Card container components</CardDescription>
@@ -340,6 +341,6 @@ export default function ComponentsPage() {
           </Button>
         </div>
       </div>
-    </div>
+    </DocsLayoutWrapper>
   )
 }

@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 const tags = Array.from({ length: 50 }).map(
   (_, i, a) => `v1.2.0-beta.${a.length - i}`
@@ -93,18 +94,17 @@ const messages = [
 
 export default function ScrollAreaPage() {
   return (
-    <DocsLayoutWrapper><div className="container mx-auto py-10">
-      <div className="mb-8">
-        <div className="flex items-center gap-4 mb-4">
-          <h1 className="text-4xl font-bold">Scroll Area</h1>
-          <Badge>Layout</Badge>
-        </div>
-        <p className="text-lg text-muted-foreground">
-          Augments native scroll functionality for custom, cross-browser styling with consistent behavior.
-        </p>
-      </div>
-
+    <DocsLayoutWrapper>
       <div className="space-y-8">
+        <div>
+          <div className="flex items-center gap-4 mb-4">
+            <h1 className="text-4xl font-bold">Scroll Area</h1>
+            <Badge>Layout</Badge>
+          </div>
+          <p className="text-lg text-muted-foreground">
+            Augments native scroll functionality for custom, cross-browser styling with consistent behavior.
+          </p>
+        </div>
         {/* Basic Vertical Scroll */}
         <Card>
           <CardHeader>
@@ -526,7 +526,6 @@ const handleSubmit = async (event) => {
                 <h3 className="font-semibold mb-2">Import</h3>
                 <pre className="bg-secondary p-4 rounded-lg overflow-x-auto">
                   <code>{`import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"`}</code>
-import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
                 </pre>
               </div>
 
@@ -605,24 +604,23 @@ import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
             </div>
           </CardContent>
         </Card>
-      </div>
 
-      {/* Navigation */}
-      <div className="mt-12 flex items-center justify-between">
-        <Link href="/radio-group">
-          <Button variant="outline">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Radio Group
-          </Button>
-        </Link>
-        <Link href="/select">
-          <Button variant="outline">
-            Select
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </Link>
+        {/* Navigation */}
+        <div className="flex items-center justify-between">
+          <Link href="/radio-group">
+            <Button variant="outline">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Radio Group
+            </Button>
+          </Link>
+          <Link href="/select">
+            <Button variant="outline">
+              Select
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
       </div>
-    </div>
     </DocsLayoutWrapper>
   )
 }

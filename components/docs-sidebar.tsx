@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Button } from '@/components/ui/button'
 import { Home, BookOpen } from 'lucide-react'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 const components = [
   { name: 'Accordion', href: '/docs/components/accordion' },
@@ -73,12 +74,15 @@ export function DocsSidebar() {
         <div className="space-y-6">
           {/* Header */}
           <div className="px-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <BookOpen className="h-4 w-4" />
-              </div>
-              <span className="font-semibold">shadcn/ui</span>
-            </Link>
+            <div className="flex items-center justify-between mb-4">
+              <Link href="/" className="flex items-center gap-2">
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                  <BookOpen className="h-4 w-4" />
+                </div>
+                <span className="font-semibold">shadcn/ui</span>
+              </Link>
+              <ThemeToggle />
+            </div>
           </div>
 
           {/* Navigation */}

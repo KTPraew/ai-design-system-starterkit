@@ -9,6 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Separator } from "@/components/ui/separator"
+import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
 
 export default function RadioGroupPage() {
   const [selectedOption, setSelectedOption] = useState("option1")
@@ -18,18 +19,17 @@ export default function RadioGroupPage() {
   const [theme, setTheme] = useState("system")
 
   return (
-    <DocsLayoutWrapper><div className="container mx-auto py-10">
-      <div className="mb-8">
-        <div className="flex items-center gap-4 mb-4">
-          <h1 className="text-4xl font-bold">Radio Group</h1>
-          <Badge>Forms</Badge>
-        </div>
-        <p className="text-lg text-muted-foreground">
-          A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.
-        </p>
-      </div>
-
+    <DocsLayoutWrapper>
       <div className="space-y-8">
+        <div>
+          <div className="flex items-center gap-4 mb-4">
+            <h1 className="text-4xl font-bold">Radio Group</h1>
+            <Badge>Forms</Badge>
+          </div>
+          <p className="text-lg text-muted-foreground">
+            A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.
+          </p>
+        </div>
         {/* Basic Radio Group */}
         <Card>
           <CardHeader>
@@ -652,7 +652,6 @@ export default function RadioGroupPage() {
                 <pre className="bg-secondary p-4 rounded-lg overflow-x-auto">
                   <code>{`import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"`}</code>
-import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
                 </pre>
               </div>
 
@@ -753,24 +752,23 @@ import { DocsLayoutWrapper } from '@/components/docs-layout-wrapper'
             </div>
           </CardContent>
         </Card>
-      </div>
 
-      {/* Navigation */}
-      <div className="mt-12 flex items-center justify-between">
-        <Link href="/progress">
-          <Button variant="outline">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Progress
-          </Button>
-        </Link>
-        <Link href="/scroll-area">
-          <Button variant="outline">
-            Scroll Area
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </Link>
+        {/* Navigation */}
+        <div className="flex items-center justify-between">
+          <Link href="/progress">
+            <Button variant="outline">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Progress
+            </Button>
+          </Link>
+          <Link href="/scroll-area">
+            <Button variant="outline">
+              Scroll Area
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
       </div>
-    </div>
     </DocsLayoutWrapper>
   )
 }
