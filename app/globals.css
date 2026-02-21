@@ -38,13 +38,14 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
+  --radius-xs:  2px;
+  --radius-sm:  4px;
+  --radius-md:  6px;
+  --radius-lg:  8px;
+  --radius-xl:  12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+  --radius-4xl: 32px;
 }
 
 :root {
@@ -80,6 +81,33 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Spacing tokens — Figma-aligned (px values) */
+  --spacing-xs: 0.25rem;   /* 4px */
+  --spacing-sm: 0.5rem;    /* 8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-2xl: 2.5rem;   /* 40px */
+  --spacing-3xl: 3.5rem;   /* 56px */
+
+  /* Typography tokens — Figma-aligned */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --line-height-sm: 1.25rem;  /* 20px */
+  --line-height-base: 1.5rem; /* 24px */
+  --line-height-4xl: 2.5rem;  /* 40px */
+  --letter-spacing-normal: 0em;
+
+  /* Border tokens — Figma-aligned */
+  --border-width-thin: 1px;
+  --border-width-icon: 1px;
+
+  /* Shadow tokens — Figma-aligned */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.1);
 }
 
 .dark {

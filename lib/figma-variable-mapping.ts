@@ -13,33 +13,34 @@ export const figmaVariableMapping = {
   // ============================================================================
   colors: {
     // Background & Foreground
+    // Values use oklch() to match globals.css (Tailwind v4 standard)
     'VariableID:373:398': {
       token: 'background',
-      value: 'hsl(0 0% 100%)',
+      value: 'oklch(1 0 0)',
       cssVar: '--background',
       description: 'Main background color (white)',
     },
     'VariableID:374:416': {
       token: 'foreground',
-      value: 'hsl(0 0% 3.9%)', // rgb(0.039, 0.039, 0.039) = #0A0A0A
+      value: 'oklch(0.145 0 0)',
       cssVar: '--foreground',
       description: 'Main text color (near black)',
     },
     'VariableID:374:417': {
       token: 'border',
-      value: 'hsl(0 0% 89.8%)', // rgb(0.898, 0.898, 0.898) = #E5E5E5
+      value: 'oklch(0.922 0 0)',
       cssVar: '--border',
       description: 'Border color (light gray)',
     },
     'VariableID:402:601': {
       token: 'mutedForeground',
-      value: 'hsl(0 0% 45.1%)', // rgb(0.451, 0.451, 0.451) = #737373
+      value: 'oklch(0.556 0 0)',
       cssVar: '--muted-foreground',
       description: 'Muted text color (medium gray)',
     },
     'VariableID:381:885': {
       token: 'secondary',
-      value: 'hsl(0 0% 96.1%)', // rgb(0.961, 0.961, 0.961) = #F5F5F5
+      value: 'oklch(0.97 0 0)',
       cssVar: '--secondary',
       description: 'Secondary background color',
     },
@@ -92,11 +93,13 @@ export const figmaVariableMapping = {
   // ============================================================================
   typography: {
     // Font Family
+    // NOTE: Figma file uses Inter; codebase intentionally uses Geist (Next.js default).
+    // Geist is the adopted font for this project — Inter is NOT used.
     'VariableID:1043:1120': {
       token: 'fontFamily.sans',
-      value: '"Inter", system-ui, sans-serif',
+      value: 'var(--font-geist-sans)',
       cssVar: '--font-sans',
-      description: 'Primary font family',
+      description: 'Primary font family (Geist Sans — replaces Figma Inter)',
     },
 
     // Font Sizes
@@ -173,23 +176,26 @@ export const figmaVariableMapping = {
   // ============================================================================
   borders: {
     // Border Radius
+    // Figma defines: md=6px, lg=8px, 3xl=24px
+    // Code uses --radius base of 0.625rem (10px) with calc() offsets.
+    // Mapping: Figma md(6px) → --radius-sm; Figma lg(8px) → --radius-md; Figma 3xl(24px) → --radius-3xl
     'VariableID:90:554': {
       token: 'borderRadius.md',
       value: '6px',
       cssVar: '--radius-md',
-      description: 'Medium border radius (buttons, inputs)',
+      description: 'Medium border radius (buttons, inputs) = 6px',
     },
     'VariableID:90:555': {
       token: 'borderRadius.lg',
       value: '8px',
       cssVar: '--radius-lg',
-      description: 'Large border radius (cards, images)',
+      description: 'Large border radius (cards, images) = 8px',
     },
     'VariableID:90:558': {
       token: 'borderRadius.3xl',
       value: '24px',
       cssVar: '--radius-3xl',
-      description: 'Extra large border radius (main cards, containers)',
+      description: 'Extra large border radius (main cards, containers) = 24px',
     },
 
     // Border Width
@@ -215,7 +221,7 @@ export const figmaVariableMapping = {
       token: 'shadows.xs',
       value: '0 1px 2px 0 rgb(0 0 0 / 0.1)',
       cssVar: '--shadow-xs',
-      description: 'Extra small shadow (Box Shadow/shadow-xs)',
+      description: 'Extra small shadow (Box Shadow/shadow-xs) — opacity 0.1 per Figma spec',
     },
   },
 } as const

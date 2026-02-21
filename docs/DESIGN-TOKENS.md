@@ -10,10 +10,11 @@ This project uses design tokens that map directly to Figma variables for consist
 
 | Figma Variable ID | Token Name | Value | Usage |
 |------------------|------------|-------|-------|
-| `VariableID:373:398` | `background` | `hsl(0 0% 100%)` | Main background color |
-| `VariableID:374:416` | `foreground` | `hsl(0 0% 3.9%)` | Main text color (rgb: 0.039) |
-| `VariableID:374:417` | `border` | `hsl(0 0% 89.8%)` | Border color (rgb: 0.898) |
-| `VariableID:402:601` | `mutedForeground` | `hsl(0 0% 45.1%)` | Muted text color (rgb: 0.451) |
+| `VariableID:373:398` | `background` | `oklch(1 0 0)` | Main background color |
+| `VariableID:374:416` | `foreground` | `oklch(0.145 0 0)` | Main text color |
+| `VariableID:374:417` | `border` | `oklch(0.922 0 0)` | Border color |
+| `VariableID:402:601` | `mutedForeground` | `oklch(0.556 0 0)` | Muted text color |
+| `VariableID:381:885` | `secondary` | `oklch(0.97 0 0)` | Secondary background color |
 
 ### Spacing Variables
 
@@ -27,7 +28,7 @@ This project uses design tokens that map directly to Figma variables for consist
 
 | Figma Variable ID | Token Name | Value | Usage |
 |------------------|------------|-------|-------|
-| `VariableID:1043:1120` | `fontFamily.sans` | `"Inter"` | Primary font family |
+| `VariableID:1043:1120` | `fontFamily.sans` | `var(--font-geist-sans)` | Primary font family (Geist; Figma uses Inter) |
 | `VariableID:1043:1088` | `fontSize.sm` | `14px` | Small text size |
 | `VariableID:1043:1114` | `fontSize.base` | `16px` | Base text size |
 | `VariableID:1043:1119` | `fontSize.4xl` | `36px` | Extra large text (headings) |
@@ -43,9 +44,9 @@ This project uses design tokens that map directly to Figma variables for consist
 
 | Figma Variable ID | Token Name | Value | Usage |
 |------------------|------------|-------|-------|
-| `VariableID:90:554` | `borderRadius.md` | `6px` | Medium border radius |
-| `VariableID:90:555` | `borderRadius.lg` | `8px` | Large border radius |
-| `VariableID:90:558` | `borderRadius.3xl` | `24px` | Extra large border radius (cards) |
+| `VariableID:90:554` | `borderRadius.sm` | `calc(var(--radius) - 4px)` = 6px | Small border radius — Figma calls this "md" |
+| `VariableID:90:555` | `borderRadius.md` | `calc(var(--radius) - 2px)` = 8px | Medium border radius — Figma calls this "lg" |
+| `VariableID:90:558` | `borderRadius.3xl` | `calc(var(--radius) + 14px)` = 24px | Extra large border radius (cards) |
 
 ### Border Width Variables
 

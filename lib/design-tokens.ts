@@ -114,17 +114,18 @@ export const spacing = {
   96: '24rem',
 }
 
-// Border Radius Tokens
+// Border Radius Tokens — absolute px values, matched to tailwind.config.js
 export const borderRadius = {
-  none: '0',
-  sm: 'calc(var(--radius) - 4px)',
-  base: 'calc(var(--radius) - 2px)',
-  md: 'var(--radius)',
-  lg: 'calc(var(--radius) + 4px)',
-  xl: 'calc(var(--radius) + 8px)',
-  '2xl': 'calc(var(--radius) + 12px)',
-  '3xl': 'calc(var(--radius) + 16px)',
-  full: '9999px',
+  none:  '0px',
+  xs:    '2px',
+  sm:    '4px',
+  md:    '6px',
+  lg:    '8px',
+  xl:    '12px',
+  '2xl': '16px',
+  '3xl': '24px',
+  '4xl': '32px',
+  full:  '9999px',
 }
 
 // Shadow Tokens (Elevation)
